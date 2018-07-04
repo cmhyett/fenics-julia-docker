@@ -11,7 +11,8 @@ To run the docker image you can simply call
 ```sh
 docker run -ti ysimillides/fenics-julia-docker 
 ```
-and once inside, 'julia' can be accessed as
-'''sh
+and once inside, 'julia' can be accessed by calling
+```sh
 julia
-'''
+```
+on the command line
