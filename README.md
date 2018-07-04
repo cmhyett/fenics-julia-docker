@@ -16,3 +16,7 @@ and once inside, 'julia' can be accessed by calling
 julia
 ```
 on the command line
+
+## Help with Docker
+
+http://fenics.readthedocs.io/projects/containers/en/latest/ is a good starting point, or the official Docker tutorials.
