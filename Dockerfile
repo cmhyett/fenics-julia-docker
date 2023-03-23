@@ -2,6 +2,7 @@ FROM ubuntu:20.04
 
 LABEL maintainer=" Yiannis Simillides <yiannis.simillides@gmail.com>"
 
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -y && apt-get install -y make rsync git gcc g++ bzip2 hdf5-tools unzip gfortran curl software-properties-common python3
 WORKDIR /test
 RUN mkdir -p /opt/julia-1.8.5 && \
