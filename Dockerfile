@@ -12,7 +12,10 @@ RUN apt-get update -q
 RUN apt-get install fenics -y
 #link to python3
 ENV PYTHON /usr/bin/python3
+RUN apt-get install libpython3.8 -y
+RUN apt-get install python3-pip -y
+RUN pip3 install matplotlib
 ADD setup.jl . 
 RUN echo "\nPATH=/opt/julia-1.8.5/bin:\$PATH\n" >> /root/.bashrc
 RUN ln -s /opt/julia-1.8.5/bin/julia /usr/local/bin/
-RUN julia
+RUN julia ./setup.jl
