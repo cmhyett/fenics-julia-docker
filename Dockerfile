@@ -13,7 +13,7 @@ RUN apt-get install fenics -y
 #link to python3
 ENV PYTHON /usr/bin/python3
 ADD setup.jl . 
-RUN echo "\nPATH=/opt/julia-0.6.3/bin:\$PATH\n" >> /root/.bashrc
+RUN echo "\nPATH=/opt/julia-1.8.5/bin:\$PATH\n" >> /root/.bashrc
 RUN ln -s /opt/julia-1.8.5/bin/julia /usr/local/bin/
 RUN julia  setup.jl
 
